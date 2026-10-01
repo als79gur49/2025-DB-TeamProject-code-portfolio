@@ -1,0 +1,3063 @@
+{
+  "schema_version": 1,
+  "status": "byte_integrity_verified_with_source_text_warnings; runtime_and_build_unverified",
+  "source": {
+    "repository": "als79gur49/2025-DB-TeamProject",
+    "visibility": "private",
+    "branch_context": "Branch_03_Diet",
+    "commit": "67ee6cdf472e2a3888d367b96d426ae3cf9443da",
+    "source_tree_blob_count": 14099,
+    "full_clone": false,
+    "original_git_history_retained": false
+  },
+  "counts": {
+    "csharp_candidates": 87,
+    "scripts_candidates": 84,
+    "SO_class_candidates": 3,
+    "excluded_candidates": 8,
+    "retained_csharp": 79,
+    "retained_context": 3,
+    "generated": 5,
+    "total_final_files": 87,
+    "retained_original_files": 82,
+    "excluded_original_files": 14017,
+    "DB_csharp": 13
+  },
+  "verification": {
+    "all_82_blob_sha_and_tree_size_match": true,
+    "all_82_sha256_computed": true,
+    "final_source_rehash": true,
+    "original_newlines_and_BOM_preserved": true,
+    "CP949_original_files": 26,
+    "UTF8_original_files": 56,
+    "connector_encoding_restorations": 26,
+    "restoration_codepages": {
+      "CP949_949": 20,
+      "Windows1252_1252": 6
+    },
+    "unresolved_hash_mismatches": [],
+    "new_transfer_replacement_character_loss_detected": false,
+    "original_text_corruption": [
+      {
+        "path": "Assets/Scripts/Entity/Entity.cs",
+        "source_replacement_characters": 4,
+        "location": "original comments only; exact source blob matched"
+      },
+      {
+        "path": "Assets/Scripts/Entity/Player.cs",
+        "source_replacement_characters": 67,
+        "location": "original comments only; exact source blob matched"
+      }
+    ],
+    "sensitive_scan": {
+      "scope": "all final file contents; original bytes decoded according to manifest; generated JSON additionally scanned after serialization",
+      "rules": [
+        "github_token",
+        "aws_access_key",
+        "private_key",
+        "email",
+        "windows_absolute_path",
+        "credential_assignment"
+      ],
+      "findings": [],
+      "limit": "Pattern and static review only; absence of findings is not a comprehensive secret or provenance guarantee"
+    },
+    "exact_allowlist": {
+      "file_paths": 87,
+      "unlisted_original_file_simulation_passed": true,
+      "arbitrary_future_file_probes": 11,
+      "passed": true,
+      "method": "Static validation of anchored literal file exceptions and every explicit ancestor; no Git initialization"
+    }
+  },
+  "gitattributes": {
+    "adopted": false,
+    "source_blob_sha1": "dfe0770424b2a19faf507a501ebfc23be8f54e7b",
+    "source_bytes": 66,
+    "reviewed_content": "# Auto detect text files and perform LF normalization\n* text=auto\n",
+    "has_LFS_filter": false,
+    "reason": "* text=auto can normalize line endings; no retained LFS payload requires its adoption"
+  },
+  "exclusions": {
+    "approved_Csharp_paths": [
+      "Assets/Scripts/Weapon/Projectile/Projectile.cs",
+      "Assets/Scripts/FSM/InputData.cs",
+      "Assets/Scripts/Utils/RandomSkin.cs",
+      "Assets/Scripts/etc/InputField.cs",
+      "Assets/Scripts/Weapon/Effect/MoreDamageEffect.cs",
+      "Assets/Scripts/Weapon/Effect/PoisonEffect.cs",
+      "Assets/Scripts/Weapon/Effect/ProjectileEffect.cs",
+      "Assets/Scripts/Utils/CoroutineSingleton.cs"
+    ],
+    "by_extension": {
+      "(no extension)": 3,
+      ".anim": 1,
+      ".asmdef": 3,
+      ".asset": 56,
+      ".cginc": 4,
+      ".controller": 174,
+      ".cs": 36,
+      ".db": 3,
+      ".def": 1,
+      ".dll": 8,
+      ".fbx": 938,
+      ".inputactions": 1,
+      ".jpg": 1,
+      ".json": 4,
+      ".lighting": 5,
+      ".mask": 5,
+      ".mat": 141,
+      ".md": 2,
+      ".meta": 7172,
+      ".obj": 1,
+      ".pdf": 3,
+      ".playable": 67,
+      ".png": 4002,
+      ".prefab": 1322,
+      ".preset": 1,
+      ".shader": 17,
+      ".shadergraph": 8,
+      ".tga": 4,
+      ".ttf": 7,
+      ".txt": 8,
+      ".unity": 12,
+      ".wlt": 1,
+      ".xml": 6
+    },
+    "nonoverlapping_selected_categories": {
+      "meta": 7172,
+      "scene": 12,
+      "prefab": 1322,
+      "serialized_asset_including_SDF_SO_settings": 56,
+      "fonts": 7,
+      "images": 4007,
+      "models": 939,
+      "dll": 8,
+      "database": 3,
+      "shader_source_graph_include": 29,
+      "excluded_csharp": 36
+    },
+    "overlapping_details": {
+      "SDF_asset_name_count": 10,
+      "SO_instance_asset_count": 5,
+      "csharp_candidate_excluded": 8,
+      "csharp_outside_candidate_roots_excluded": 28
+    },
+    "entire_resource_folders": [
+      {
+        "prefix": "Assets/Plugins/",
+        "original_file_count": 358,
+        "retained_file_count": 0
+      },
+      {
+        "prefix": "Assets/Synty/",
+        "original_file_count": 1379,
+        "retained_file_count": 0
+      },
+      {
+        "prefix": "Assets/GUI Assets/",
+        "original_file_count": 8465,
+        "retained_file_count": 0
+      },
+      {
+        "prefix": "Assets/VFX_Klaus/",
+        "original_file_count": 201,
+        "retained_file_count": 0
+      },
+      {
+        "prefix": "Assets/StreamingAssets/",
+        "original_file_count": 6,
+        "retained_file_count": 0
+      }
+    ],
+    "all_non_allowlisted_source_files_excluded": true
+  },
+  "versions": {
+    "unity": "2022.3.33f1",
+    "unity_revision": "b2c853adf198",
+    "manifest_dependencies": {
+      "com.unity.2d.sprite": "1.0.0",
+      "com.unity.ai.navigation": "1.1.6",
+      "com.unity.cinemachine": "2.10.3",
+      "com.unity.collab-proxy": "2.8.2",
+      "com.unity.ide.rider": "3.0.28",
+      "com.unity.ide.visualstudio": "2.0.22",
+      "com.unity.ide.vscode": "1.2.5",
+      "com.unity.inputsystem": "1.7.0",
+      "com.unity.render-pipelines.universal": "14.0.11",
+      "com.unity.test-framework": "1.1.33",
+      "com.unity.textmeshpro": "3.0.6",
+      "com.unity.timeline": "1.7.6",
+      "com.unity.ugui": "1.0.0",
+      "com.unity.visualscripting": "1.9.4",
+      "com.unity.modules.ai": "1.0.0",
+      "com.unity.modules.androidjni": "1.0.0",
+      "com.unity.modules.animation": "1.0.0",
+      "com.unity.modules.assetbundle": "1.0.0",
+      "com.unity.modules.audio": "1.0.0",
+      "com.unity.modules.cloth": "1.0.0",
+      "com.unity.modules.director": "1.0.0",
+      "com.unity.modules.imageconversion": "1.0.0",
+      "com.unity.modules.imgui": "1.0.0",
+      "com.unity.modules.jsonserialize": "1.0.0",
+      "com.unity.modules.particlesystem": "1.0.0",
+      "com.unity.modules.physics": "1.0.0",
+      "com.unity.modules.physics2d": "1.0.0",
+      "com.unity.modules.screencapture": "1.0.0",
+      "com.unity.modules.terrain": "1.0.0",
+      "com.unity.modules.terrainphysics": "1.0.0",
+      "com.unity.modules.tilemap": "1.0.0",
+      "com.unity.modules.ui": "1.0.0",
+      "com.unity.modules.uielements": "1.0.0",
+      "com.unity.modules.umbra": "1.0.0",
+      "com.unity.modules.unityanalytics": "1.0.0",
+      "com.unity.modules.unitywebrequest": "1.0.0",
+      "com.unity.modules.unitywebrequestassetbundle": "1.0.0",
+      "com.unity.modules.unitywebrequestaudio": "1.0.0",
+      "com.unity.modules.unitywebrequesttexture": "1.0.0",
+      "com.unity.modules.unitywebrequestwww": "1.0.0",
+      "com.unity.modules.vehicles": "1.0.0",
+      "com.unity.modules.video": "1.0.0",
+      "com.unity.modules.vr": "1.0.0",
+      "com.unity.modules.wind": "1.0.0",
+      "com.unity.modules.xr": "1.0.0"
+    },
+    "lock_resolved_dependencies": {
+      "com.unity.2d.sprite": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.ai.navigation": {
+        "version": "1.1.6",
+        "source": "registry",
+        "depth": 0
+      },
+      "com.unity.burst": {
+        "version": "1.8.15",
+        "source": "registry",
+        "depth": 1
+      },
+      "com.unity.cinemachine": {
+        "version": "2.10.3",
+        "source": "registry",
+        "depth": 0
+      },
+      "com.unity.collab-proxy": {
+        "version": "2.8.2",
+        "source": "registry",
+        "depth": 0
+      },
+      "com.unity.ext.nunit": {
+        "version": "1.0.6",
+        "source": "registry",
+        "depth": 1
+      },
+      "com.unity.ide.rider": {
+        "version": "3.0.28",
+        "source": "registry",
+        "depth": 0
+      },
+      "com.unity.ide.visualstudio": {
+        "version": "2.0.22",
+        "source": "registry",
+        "depth": 0
+      },
+      "com.unity.ide.vscode": {
+        "version": "1.2.5",
+        "source": "registry",
+        "depth": 0
+      },
+      "com.unity.inputsystem": {
+        "version": "1.7.0",
+        "source": "registry",
+        "depth": 0
+      },
+      "com.unity.mathematics": {
+        "version": "1.2.6",
+        "source": "registry",
+        "depth": 1
+      },
+      "com.unity.render-pipelines.core": {
+        "version": "14.0.11",
+        "source": "builtin",
+        "depth": 1
+      },
+      "com.unity.render-pipelines.universal": {
+        "version": "14.0.11",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.render-pipelines.universal-config": {
+        "version": "14.0.10",
+        "source": "builtin",
+        "depth": 1
+      },
+      "com.unity.searcher": {
+        "version": "4.9.2",
+        "source": "registry",
+        "depth": 2
+      },
+      "com.unity.shadergraph": {
+        "version": "14.0.11",
+        "source": "builtin",
+        "depth": 1
+      },
+      "com.unity.test-framework": {
+        "version": "1.1.33",
+        "source": "registry",
+        "depth": 0
+      },
+      "com.unity.textmeshpro": {
+        "version": "3.0.6",
+        "source": "registry",
+        "depth": 0
+      },
+      "com.unity.timeline": {
+        "version": "1.7.6",
+        "source": "registry",
+        "depth": 0
+      },
+      "com.unity.ugui": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.visualscripting": {
+        "version": "1.9.4",
+        "source": "registry",
+        "depth": 0
+      },
+      "com.unity.modules.ai": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.androidjni": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.animation": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.assetbundle": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.audio": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.cloth": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.director": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.imageconversion": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.imgui": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.jsonserialize": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.particlesystem": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.physics": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.physics2d": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.screencapture": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.subsystems": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 1
+      },
+      "com.unity.modules.terrain": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.terrainphysics": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.tilemap": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.ui": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.uielements": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.umbra": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.unityanalytics": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.unitywebrequest": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.unitywebrequestassetbundle": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.unitywebrequestaudio": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.unitywebrequesttexture": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.unitywebrequestwww": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.vehicles": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.video": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.vr": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.wind": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      },
+      "com.unity.modules.xr": {
+        "version": "1.0.0",
+        "source": "builtin",
+        "depth": 0
+      }
+    },
+    "excluded_DLL_investigation": {
+      "basis": "Separate original investigation evidence; DLLs not downloaded into this review copy",
+      "DOTween_embedded": "1.2.765",
+      "DOTween_Pro_embedded": "1.0.381",
+      "DOTween_and_Pro_PE_FileVersion": "1.0.0.0",
+      "Mono_Data_Sqlite_AssemblyVersion": "4.0.0.0",
+      "Mono_Data_Sqlite_FileVersion": "1.0.61.0",
+      "sqlite3_engine_version": null
+    }
+  },
+  "validation_limits": {
+    "unity_run": false,
+    "build": false,
+    "DB_execution": false,
+    "automated_game_tests": false,
+    "executable_copy": false,
+    "source_code_modified": false,
+    "new_OSS_license_granted": false,
+    "independent_legal_consent_verification": false,
+    "team_code_and_names_consent": "user-confirmed",
+    "guarantee_of_no_other_external_borrowing": false,
+    "known_static_issues": [
+      "Five unguarded UnityEditor import files",
+      "PlayTime accumulation before EndSession updates elapsed seconds",
+      "PlayerSpawner omits skill-initializing Setup overload",
+      "TitlePlayerInfo null guard uses ||",
+      "GetPlayerBestRanking does not guarantee one best record per account",
+      "Three aggregate APIs are system-wide"
+    ]
+  },
+  "contribution_evidence": {
+    "basis": "Original GitHub commits and diff review, cross-checked with fixed-commit final files",
+    "reviewed_commits": [
+      {
+        "sha": "0fd93082dc25608ab355812b5d15a8c3caece02b",
+        "login": "als79gur49"
+      },
+      {
+        "sha": "b01bbbddc85bab11850cd0e0911d02238a0dc8aa",
+        "login": "Runedia"
+      },
+      {
+        "sha": "142a1ebae56532962cfe2518abae2bfe45440261",
+        "login": "Runedia"
+      },
+      {
+        "sha": "a23f590cd947fe34f111bead33092ff69455b6ae",
+        "login": "miji1234"
+      },
+      {
+        "sha": "92b9ff0549f33408c0bdb673307254b9d441a2e7",
+        "login": "als79gur49"
+      },
+      {
+        "sha": "3e3ce2674ccd9a7d1fe3f4f435914290504b0d31",
+        "login": "als79gur49"
+      },
+      {
+        "sha": "340a1d65b7da711cf43dd2e5ac9490c013ef346a",
+        "login": "als79gur49"
+      },
+      {
+        "sha": "bbfd93f54da416a43972bec0b13f40f89d12eb6f",
+        "login": "als79gur49"
+      },
+      {
+        "sha": "529e6870549a842fb039f8a88b3a3d70dce4fe5c",
+        "login": "als79gur49"
+      },
+      {
+        "sha": "1614d381a817c2385ff83c69aa461354468c705a",
+        "login": "als79gur49"
+      },
+      {
+        "sha": "b879463fb40a25bdbd24ab8e3f829ff4acf8db85",
+        "login": "als79gur49"
+      },
+      {
+        "sha": "098cdb044b13600618ac1d1fee68db684f34f3e7",
+        "login": "als79gur49"
+      },
+      {
+        "sha": "f8ea12e3c95beb85fa2200658efe08c2078304d4",
+        "login": "als79gur49"
+      },
+      {
+        "sha": "b333d0a7df96dab123b4ac94a73684ff06b5b75e",
+        "login": "als79gur49"
+      },
+      {
+        "sha": "89308ec92fcd0a32b138a534e179e529cc8d0103",
+        "login": "Runedia"
+      },
+      {
+        "sha": "3c1023752ca6293bc6f5114dd78755cc133861b9",
+        "login": "als79gur49"
+      }
+    ],
+    "GitHub_logins_not_assigned_to_unconfirmed_real_names": [
+      "Runedia",
+      "miji1234"
+    ],
+    "commit_counts_not_contribution_percentages": true,
+    "DB_13_files_not_individual_sole_authorship": true,
+    "final_added_API_count": 6,
+    "UI_design_not_claimed_as_individual_sole_authorship": true,
+    "Projectile_VFX_comparison": {
+      "original_commit": "62cd4d1a0fa975b8fe5a30da4658b87180880541",
+      "original_path": "Assets/VFX_Klaus/Scripts/ProjectileMove.cs",
+      "reviewed_path": "Assets/Scripts/Weapon/Projectile/Projectile.cs",
+      "scope": "Shared muzzle and hit VFX implementation segments; no inference of copying chronology or infringement"
+    },
+    "fixed_commit_history_metadata_counts": {
+      "total": 114,
+      "by_login": {
+        "als79gur49": 106,
+        "Runedia": 8
+      },
+      "interpretation": "Commit counts are not contribution percentages"
+    }
+  },
+  "source_files": [
+    {
+      "source_path": "Assets/Scripts/Animation/EntityAnimation.cs",
+      "path": "Assets/Scripts/Animation/EntityAnimation.cs",
+      "expected_blob_sha": "4a83c1b06ad044ddaa095b8412bef278e049bfb9",
+      "expected_size": 1385,
+      "bytes": 1385,
+      "blob_sha": "4a83c1b06ad044ddaa095b8412bef278e049bfb9",
+      "sha256": "ad2d0a6478171e564f7ee81890d120b69da5cd610db9766a33a12ed398060f46",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "Animator 속도·방향·사망 상태 설정",
+      "symbols": [
+        "EntityAnimation"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 65,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/DamagePopup/DamagePopup.cs",
+      "path": "Assets/Scripts/DamagePopup/DamagePopup.cs",
+      "expected_blob_sha": "cb715542e1214ebe5e491ef4cd99d06924c0da37",
+      "expected_size": 1683,
+      "bytes": 1683,
+      "blob_sha": "cb715542e1214ebe5e491ef4cd99d06924c0da37",
+      "sha256": "d1c73cb55ee2f60c7749bb829e42996a639087f9839a93b54db5a78a7656b993",
+      "verified": true,
+      "has_replacement_character": false,
+      "restoration": "UTF-8 connector text re-encoded as codepage 949; exact blob and size matched",
+      "source_replacement_character_count": 0,
+      "original_encoding": "CP949",
+      "purpose": "피해 수치 표시·DOTween 애니메이션·풀 반환 요청",
+      "symbols": [
+        "DamagePopup"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 63,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/DamagePopup/DamagePopupManager.cs",
+      "path": "Assets/Scripts/DamagePopup/DamagePopupManager.cs",
+      "expected_blob_sha": "57efdd00cf72d8ba55d0d8f1c1f771aedfae5547",
+      "expected_size": 657,
+      "bytes": 657,
+      "blob_sha": "57efdd00cf72d8ba55d0d8f1c1f771aedfae5547",
+      "sha256": "5be2902f6ffa21e3c93eaad80c1cfacff4ad2232003e26f937c330d2854283e8",
+      "verified": true,
+      "has_replacement_character": false,
+      "restoration": "UTF-8 connector text re-encoded as codepage 1252; exact blob and size matched",
+      "source_replacement_character_count": 0,
+      "original_encoding": "CP949",
+      "purpose": "피해 팝업 풀 생성·표시·비활성화",
+      "symbols": [
+        "DamagePopupManager"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 29,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/DB/DatabaseInitializer.cs",
+      "path": "Assets/Scripts/DB/DatabaseInitializer.cs",
+      "expected_blob_sha": "c94b38f022ca291c2db03700b2bd8b91bf4fc22b",
+      "expected_size": 13614,
+      "bytes": 13614,
+      "blob_sha": "c94b38f022ca291c2db03700b2bd8b91bf4fc22b",
+      "sha256": "9e9a5309b427c296d078086bc11a4ee8b36944fc1363772e18b8df4a6e4a4cdc",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "DB 초기화·상태 확인·만료 세션 정리·종료 처리",
+      "symbols": [
+        "DatabaseInitializer"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 409,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/DB/DatabaseManager.cs",
+      "path": "Assets/Scripts/DB/DatabaseManager.cs",
+      "expected_blob_sha": "0ee08e34721c0a953937a260b348b2d9fd6bdc75",
+      "expected_size": 16558,
+      "bytes": 16558,
+      "blob_sha": "0ee08e34721c0a953937a260b348b2d9fd6bdc75",
+      "sha256": "1ae0e987ff57b02dce9a99f08fc35dd8e21f88e2355c360c43166f6205e04ead",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "SQLite 연결·테이블/인덱스/뷰 정의·파라미터 SQL 실행",
+      "symbols": [
+        "DatabaseManager"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 462,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/DB/EntityGameManager.cs",
+      "path": "Assets/Scripts/DB/EntityGameManager.cs",
+      "expected_blob_sha": "fc2fab3293236ea845b67c16256c1d5b64873756",
+      "expected_size": 11140,
+      "bytes": 11140,
+      "blob_sha": "fc2fab3293236ea845b67c16256c1d5b64873756",
+      "sha256": "70aeb148c65368fbdf44fdeba2e30fc8b961d4e80111d58ae49aa9da543eb295",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "Unity 인스턴스 ID와 DB 엔티티 ID 매핑 및 게임 이벤트 연결",
+      "symbols": [
+        "EntityGameManager",
+        "GameStatusInfo"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 333,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/DB/EntityRepository.cs",
+      "path": "Assets/Scripts/DB/EntityRepository.cs",
+      "expected_blob_sha": "6daee74ed212d16287ad5c3aa3485ec90c216404",
+      "expected_size": 5247,
+      "bytes": 5247,
+      "blob_sha": "6daee74ed212d16287ad5c3aa3485ec90c216404",
+      "sha256": "c0dbea6d23de5a84b59bee41855b9918c6681c8c7bdc45afdb96733d0b59ff28",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "Player/AI 엔티티 생성·ID/이름 조회",
+      "symbols": [
+        "EntityRepository"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 163,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/DB/GameSessionManager.cs",
+      "path": "Assets/Scripts/DB/GameSessionManager.cs",
+      "expected_blob_sha": "7906cbc319952117d787cdb996dd3900501d76fc",
+      "expected_size": 15203,
+      "bytes": 15203,
+      "blob_sha": "7906cbc319952117d787cdb996dd3900501d76fc",
+      "sha256": "906a3570093d6891854546d4ba736940ee9abb96897108bd351bdf64f53c921b",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "현재 세션·플레이어 ID와 점수/사망/종료 흐름 조정",
+      "symbols": [
+        "GameSessionManager"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 475,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/DB/GameSessionRepository.cs",
+      "path": "Assets/Scripts/DB/GameSessionRepository.cs",
+      "expected_blob_sha": "8dc8be1afa13577a26cddfddeec9ae43c48eb369",
+      "expected_size": 5209,
+      "bytes": 5209,
+      "blob_sha": "8dc8be1afa13577a26cddfddeec9ae43c48eb369",
+      "sha256": "b69e6a094fb9511a9d28c52e5de82db3c54f15e67cb88e300a86eed342669a4e",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "세션 생성·ID 조회·종료 시각/플레이 시간 기록",
+      "symbols": [
+        "GameSessionRepository",
+        "SessionDetailModel"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 156,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/DB/Models/EntityModel.cs",
+      "path": "Assets/Scripts/DB/Models/EntityModel.cs",
+      "expected_blob_sha": "2eab2117267ac81d8709e92ca97ec89c98d7e3fe",
+      "expected_size": 2801,
+      "bytes": 2801,
+      "blob_sha": "2eab2117267ac81d8709e92ca97ec89c98d7e3fe",
+      "sha256": "c9c45bcfcef3d47b0a2a152a832a4d8a9ba2b17260e23ceec34cb305984374d9",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "영구 EntityModel과 세션별 SessionEntityModel 정의",
+      "symbols": [
+        "EntityModel",
+        "SessionEntityModel"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 116,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/DB/Models/GameSessionModel.cs",
+      "path": "Assets/Scripts/DB/Models/GameSessionModel.cs",
+      "expected_blob_sha": "a6c7119764784cb09161d9eca15c9aed370b721c",
+      "expected_size": 2498,
+      "bytes": 2498,
+      "blob_sha": "a6c7119764784cb09161d9eca15c9aed370b721c",
+      "sha256": "86c9186ffb53b484ce7a98ab64d327593c8c11827646ecd701c07a7fd7e73de2",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "세션 시간·완료 상태 모델과 표시 형식",
+      "symbols": [
+        "GameSessionModel"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 92,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/DB/Models/PlayerModel.cs",
+      "path": "Assets/Scripts/DB/Models/PlayerModel.cs",
+      "expected_blob_sha": "bbaae8735a1b4e2121a22c0f1f9d5d8b6c0d6ddf",
+      "expected_size": 2072,
+      "bytes": 2072,
+      "blob_sha": "bbaae8735a1b4e2121a22c0f1f9d5d8b6c0d6ddf",
+      "sha256": "92747c7fc7592e4367652fc4c1ee2a91234967616b28016198b21c5793fccc89",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "플레이어 기록·통계 모델",
+      "symbols": [
+        "PlayerModel"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 82,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/DB/Models/RankingData.cs",
+      "path": "Assets/Scripts/DB/Models/RankingData.cs",
+      "expected_blob_sha": "e024f241cbf6829fc54494ee449440f765735895",
+      "expected_size": 2053,
+      "bytes": 2053,
+      "blob_sha": "e024f241cbf6829fc54494ee449440f765735895",
+      "sha256": "949459c16c2162ed860b8470fa4413dc7f47f603c7c2235c170c658490f9eba1",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "랭킹 결과·시간·점수 표시 모델",
+      "symbols": [
+        "RankingData"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 83,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/DB/PlayerRepository.cs",
+      "path": "Assets/Scripts/DB/PlayerRepository.cs",
+      "expected_blob_sha": "01e5663ff182d459b10e3588948e8f166d6e6ecc",
+      "expected_size": 7499,
+      "bytes": 7499,
+      "blob_sha": "01e5663ff182d459b10e3588948e8f166d6e6ecc",
+      "sha256": "c63fcb48af626d2bd3c1c65347736cd2874b3cb4c3273e19cab4be4e7640c343",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "플레이어 생성·조회·최고 점수·누적 통계 갱신",
+      "symbols": [
+        "PlayerRepository"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 215,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/DB/RankingManager.cs",
+      "path": "Assets/Scripts/DB/RankingManager.cs",
+      "expected_blob_sha": "35d1b1b2e9eca83ce421c59a9992672dd34e23f1",
+      "expected_size": 17253,
+      "bytes": 17253,
+      "blob_sha": "35d1b1b2e9eca83ce421c59a9992672dd34e23f1",
+      "sha256": "1aa9e3c9b416a5d06b0e8eea2c105a6538a4537d3f7afc8785a54904781cc6e2",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "실시간/종료/완료 기록 랭킹·전체 시스템 집계·임시 랭킹 정리",
+      "symbols": [
+        "RankingManager"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 519,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/DB/SessionEntityRepository.cs",
+      "path": "Assets/Scripts/DB/SessionEntityRepository.cs",
+      "expected_blob_sha": "bfc9d8756e59262d4a8c253825889d38368159ac",
+      "expected_size": 12057,
+      "bytes": 12057,
+      "blob_sha": "bfc9d8756e59262d4a8c253825889d38368159ac",
+      "sha256": "0d7a52c41420d0655c925c8a2734a6664361a627a6924209ab9e76001997020f",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "세션 참가 엔티티 조회·점수/레벨/킬/생사 갱신",
+      "symbols": [
+        "SessionEntityRepository"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 317,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/EnemySpawner.cs",
+      "path": "Assets/Scripts/EnemySpawner.cs",
+      "expected_blob_sha": "494dfa1f0e9d3e6dd36af4809e99103718bf7a23",
+      "expected_size": 4554,
+      "bytes": 4554,
+      "blob_sha": "494dfa1f0e9d3e6dd36af4809e99103718bf7a23",
+      "sha256": "c8639ab04b3acdfb548afc1fbf37710f34ce009e9246adbc031d0f11f226302b",
+      "verified": true,
+      "has_replacement_character": false,
+      "restoration": "UTF-8 connector text re-encoded as codepage 949; exact blob and size matched",
+      "source_replacement_character_count": 0,
+      "original_encoding": "CP949",
+      "purpose": "적 풀 생성·재사용과 생성/사망 이벤트, 현재 생존 수에 따른 생성 간격",
+      "symbols": [
+        "EnemySpawner"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 158,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/Entity/Enemy.cs",
+      "path": "Assets/Scripts/Entity/Enemy.cs",
+      "expected_blob_sha": "bd8ab8e5c30c5a3ef26ff5ec66795664ce1087c2",
+      "expected_size": 2017,
+      "bytes": 2017,
+      "blob_sha": "bd8ab8e5c30c5a3ef26ff5ec66795664ce1087c2",
+      "sha256": "5d9d1855aca511cc1c6ea84705d1f140beda646be53cbea1c8ffaf115e597bcc",
+      "verified": true,
+      "has_replacement_character": false,
+      "restoration": "UTF-8 connector text re-encoded as codepage 949; exact blob and size matched",
+      "source_replacement_character_count": 0,
+      "original_encoding": "CP949",
+      "purpose": "AI/FSM 초기화·DB 등록·사망 처리 후 지연 풀 반환",
+      "symbols": [
+        "Enemy"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 90,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/Entity/Entity.cs",
+      "path": "Assets/Scripts/Entity/Entity.cs",
+      "expected_blob_sha": "11637324d82a3f542ca78dd72cb0f8640956ae13",
+      "expected_size": 6547,
+      "bytes": 6547,
+      "blob_sha": "11637324d82a3f542ca78dd72cb0f8640956ae13",
+      "sha256": "e4904fdc82705875d38e17a128cbc3a9c56a9d27d88effccb82bd818ad8a9766",
+      "verified": true,
+      "has_replacement_character": true,
+      "source_replacement_character_count": 4,
+      "original_encoding": "UTF-8",
+      "purpose": "공통 피해·점수·경험치·무기 연결·사망 이벤트",
+      "symbols": [
+        "Entity"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 220,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/Entity/EntityData.cs",
+      "path": "Assets/Scripts/Entity/EntityData.cs",
+      "expected_blob_sha": "0b517fb7e34d6b228c063be8314b03340cc33a90",
+      "expected_size": 1366,
+      "bytes": 1366,
+      "blob_sha": "0b517fb7e34d6b228c063be8314b03340cc33a90",
+      "sha256": "384f15b2e28686d7e26ca8484a3d7bf611d2bbd2601cf69d3beb1c5cbbe00177",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "레벨·HP·점수 등 엔티티 상태 데이터",
+      "symbols": [
+        "EntityData"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 74,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/Entity/EntityInfo.cs",
+      "path": "Assets/Scripts/Entity/EntityInfo.cs",
+      "expected_blob_sha": "f02bebec53e54293143a72e5ebccd91554d68f07",
+      "expected_size": 668,
+      "bytes": 668,
+      "blob_sha": "f02bebec53e54293143a72e5ebccd91554d68f07",
+      "sha256": "6baf8143d43d7e21aebc3d0dab57b8f82ff0be3932a24d1012b27dcf649d26f1",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "엔티티 이름·이미지 식별 데이터",
+      "symbols": [
+        "EntityInfo"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 26,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/Entity/EntityUI.cs",
+      "path": "Assets/Scripts/Entity/EntityUI.cs",
+      "expected_blob_sha": "bdfa9d790dcb9f4bd540166e312850519e558760",
+      "expected_size": 854,
+      "bytes": 854,
+      "blob_sha": "bdfa9d790dcb9f4bd540166e312850519e558760",
+      "sha256": "a86c5c5e079827cf77d3294048063c6a59042371679c04c67e997a0df752b597",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "피해 이벤트의 HP HUD와 카메라 방향 표시",
+      "symbols": [
+        "EntityUI"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 43,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/Entity/Player.cs",
+      "path": "Assets/Scripts/Entity/Player.cs",
+      "expected_blob_sha": "94a557e2119c2ce77b7a0701bff47805b2ffa0c2",
+      "expected_size": 5770,
+      "bytes": 5770,
+      "blob_sha": "94a557e2119c2ce77b7a0701bff47805b2ffa0c2",
+      "sha256": "2f1057010b8df918b13c3105bc68997e8a003f3f0e5d2f8b58acd0c5568ffe87",
+      "verified": true,
+      "has_replacement_character": true,
+      "source_replacement_character_count": 67,
+      "original_encoding": "UTF-8",
+      "purpose": "키보드 이동·마우스 조준·자동 공격·사망·레벨업",
+      "symbols": [
+        "Player"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 214,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/Entity/Player/LevelupStorage.cs",
+      "path": "Assets/Scripts/Entity/Player/LevelupStorage.cs",
+      "expected_blob_sha": "b3090fc58763b3ca46d9a85d8fc3fdefb9947bec",
+      "expected_size": 2519,
+      "bytes": 2519,
+      "blob_sha": "b3090fc58763b3ca46d9a85d8fc3fdefb9947bec",
+      "sha256": "815f2fffe8c00f990e41b1e48f01eee3e8161b541ba5e409f495af37472559bd",
+      "verified": true,
+      "has_replacement_character": false,
+      "restoration": "UTF-8 connector text re-encoded as codepage 949; exact blob and size matched",
+      "source_replacement_character_count": 0,
+      "original_encoding": "CP949",
+      "purpose": "스킬/무기 후보 초기화·선택·무기 교체",
+      "symbols": [
+        "LevelupStorage"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 98,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/EntitySpawner.cs",
+      "path": "Assets/Scripts/EntitySpawner.cs",
+      "expected_blob_sha": "cff54edc244b233710ad46c6a161f6f0923e4bb1",
+      "expected_size": 2851,
+      "bytes": 2851,
+      "blob_sha": "cff54edc244b233710ad46c6a161f6f0923e4bb1",
+      "sha256": "e20bf56969721aaf18ed853034c96f536efa40039b5740b4c12a590a51efdb4f",
+      "verified": true,
+      "has_replacement_character": false,
+      "restoration": "UTF-8 connector text re-encoded as codepage 949; exact blob and size matched",
+      "source_replacement_character_count": 0,
+      "original_encoding": "CP949",
+      "purpose": "엔티티 공통 의존성 주입·스킨 적용·스폰 위치 선택",
+      "symbols": [
+        "EntitySpawner"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 82,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/etc/PlayerDataManager.cs",
+      "path": "Assets/Scripts/etc/PlayerDataManager.cs",
+      "expected_blob_sha": "88c07b579ffb4caed7e54f0c9f17fa5cddb7755f",
+      "expected_size": 901,
+      "bytes": 901,
+      "blob_sha": "88c07b579ffb4caed7e54f0c9f17fa5cddb7755f",
+      "sha256": "b109bebca28104b0a0902a98b2537b78b30d43eb50d55ad018013fe617a64a8e",
+      "verified": true,
+      "has_replacement_character": false,
+      "restoration": "UTF-8 connector text re-encoded as codepage 949; exact blob and size matched",
+      "source_replacement_character_count": 0,
+      "original_encoding": "CP949",
+      "purpose": "씬 사이의 입력 이름·스킨 인덱스 보관",
+      "symbols": [
+        "PlayerDataManager"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 42,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/etc/TitlePlayerInfo.cs",
+      "path": "Assets/Scripts/etc/TitlePlayerInfo.cs",
+      "expected_blob_sha": "0634a03f4b2f22d6daf445923bb6fb8485d66f11",
+      "expected_size": 1491,
+      "bytes": 1491,
+      "blob_sha": "0634a03f4b2f22d6daf445923bb6fb8485d66f11",
+      "sha256": "fda19e06d7d9041562be7d860c4c40a403bb14d2314d4e6f2d5df95509bebc2e",
+      "verified": true,
+      "has_replacement_character": false,
+      "restoration": "UTF-8 connector text re-encoded as codepage 949; exact blob and size matched",
+      "source_replacement_character_count": 0,
+      "original_encoding": "CP949",
+      "purpose": "타이틀의 완료 기록 점수와 시스템 전체 집계 표시",
+      "symbols": [
+        "TitlePlayerInfo"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 61,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/etc/TitleRanking.cs",
+      "path": "Assets/Scripts/etc/TitleRanking.cs",
+      "expected_blob_sha": "e836d485ef9dead0b23f8223c445b5a755afd7f8",
+      "expected_size": 2196,
+      "bytes": 2196,
+      "blob_sha": "e836d485ef9dead0b23f8223c445b5a755afd7f8",
+      "sha256": "7f74d6d2efc5f73b718408b1709d6f30d0f4c1c4c936e8d5670acdf70d99697e",
+      "verified": true,
+      "has_replacement_character": false,
+      "restoration": "UTF-8 connector text re-encoded as codepage 949; exact blob and size matched",
+      "source_replacement_character_count": 0,
+      "original_encoding": "CP949",
+      "purpose": "완료 기록을 날짜 포함 랭킹 행으로 표시",
+      "symbols": [
+        "TitleRanking"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 88,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/etc/TitleSceneManager.cs",
+      "path": "Assets/Scripts/etc/TitleSceneManager.cs",
+      "expected_blob_sha": "ba026fbb487fb8151d3db113b59ea9c9fad62f84",
+      "expected_size": 905,
+      "bytes": 905,
+      "blob_sha": "ba026fbb487fb8151d3db113b59ea9c9fad62f84",
+      "sha256": "53c65302300ca2d77627a1e49e46fb284ce0007a6214cb18295542306673b03c",
+      "verified": true,
+      "has_replacement_character": false,
+      "restoration": "UTF-8 connector text re-encoded as codepage 949; exact blob and size matched",
+      "source_replacement_character_count": 0,
+      "original_encoding": "CP949",
+      "purpose": "입력 이름 검증·보관과 게임 씬 전환",
+      "symbols": [
+        "TitleSceneManager"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 35,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/FSM/AIInput.cs",
+      "path": "Assets/Scripts/FSM/AIInput.cs",
+      "expected_blob_sha": "c4f8fd6927c91c5c16f19f37d7c0e1ee6467f852",
+      "expected_size": 2059,
+      "bytes": 2059,
+      "blob_sha": "c4f8fd6927c91c5c16f19f37d7c0e1ee6467f852",
+      "sha256": "4f284474c743215c3f4f3253fe85cc244573a0c99d51fd742ce02c2cff377207",
+      "verified": true,
+      "has_replacement_character": false,
+      "restoration": "UTF-8 connector text re-encoded as codepage 1252; exact blob and size matched",
+      "source_replacement_character_count": 0,
+      "original_encoding": "CP949",
+      "purpose": "주변 엔티티 탐지·가까운 목표 선택·거리/방향 제공",
+      "symbols": [
+        "AIInput"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 85,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/FSM/FSM.cs",
+      "path": "Assets/Scripts/FSM/FSM.cs",
+      "expected_blob_sha": "ed3ac0a5b7f5e45e8f73624e4585d22ab237ecb5",
+      "expected_size": 3508,
+      "bytes": 3508,
+      "blob_sha": "ed3ac0a5b7f5e45e8f73624e4585d22ab237ecb5",
+      "sha256": "0882075424fa66dd9226afcfc5ef5d1c663d459e4734bc6c9e505acef0840fb2",
+      "verified": true,
+      "has_replacement_character": false,
+      "restoration": "UTF-8 connector text re-encoded as codepage 949; exact blob and size matched",
+      "source_replacement_character_count": 0,
+      "original_encoding": "CP949",
+      "purpose": "상태·전이 등록과 조건에 따른 상태 전환/실행",
+      "symbols": [
+        "EntityStates",
+        "FSM"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 117,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/FSM/State/AttackState.cs",
+      "path": "Assets/Scripts/FSM/State/AttackState.cs",
+      "expected_blob_sha": "3cf1d4d229d07ca7cd037d8cf788fa52fbe9527a",
+      "expected_size": 1448,
+      "bytes": 1448,
+      "blob_sha": "3cf1d4d229d07ca7cd037d8cf788fa52fbe9527a",
+      "sha256": "25c60956b403aab69f73c178a175e1f21003720d8987841af4071dfe0574bf25",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "목표를 향한 회전과 정렬 후 공격 실행",
+      "symbols": [
+        "AttackState"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 54,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/FSM/State/ChaseState.cs",
+      "path": "Assets/Scripts/FSM/State/ChaseState.cs",
+      "expected_blob_sha": "de5c8da3d7f35cc0db6ae5bf666768a801779fca",
+      "expected_size": 915,
+      "bytes": 915,
+      "blob_sha": "de5c8da3d7f35cc0db6ae5bf666768a801779fca",
+      "sha256": "dd521f24b71415e5a7844cba2401780e442c224a6147524d0e1aa953149b6ca1",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "NavMeshAgent로 목표 추적",
+      "symbols": [
+        "ChaseState"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 44,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/FSM/State/DeadState.cs",
+      "path": "Assets/Scripts/FSM/State/DeadState.cs",
+      "expected_blob_sha": "2906b191804a6f01ad68399759b36486d21441f9",
+      "expected_size": 702,
+      "bytes": 702,
+      "blob_sha": "2906b191804a6f01ad68399759b36486d21441f9",
+      "sha256": "1fc6ba8277e92c1521a61bc09a1fc157d462931a8e0fa658f4245e8d89ee2541",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "콜라이더 비활성화·사망 애니메이션·사망 이벤트",
+      "symbols": [
+        "DeadState"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 38,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/FSM/State/FleeState.cs",
+      "path": "Assets/Scripts/FSM/State/FleeState.cs",
+      "expected_blob_sha": "09b8d9f0f055428ee5fb98e28e653b50677dde42",
+      "expected_size": 1198,
+      "bytes": 1198,
+      "blob_sha": "09b8d9f0f055428ee5fb98e28e653b50677dde42",
+      "sha256": "ee2730a0005d32eb43390f714dcae76df82084f85a16e880663845402097a5fb",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "목표 반대 방향으로 도주",
+      "symbols": [
+        "FleeState"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 53,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/FSM/State/IdleState.cs",
+      "path": "Assets/Scripts/FSM/State/IdleState.cs",
+      "expected_blob_sha": "7abf773d94971ff755362b366bc572b606c5777f",
+      "expected_size": 489,
+      "bytes": 489,
+      "blob_sha": "7abf773d94971ff755362b366bc572b606c5777f",
+      "sha256": "39803282dd2f6bbb44ea73256887f5428cb2b6343f9284191b9c26fe23124fa3",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "정지 애니메이션 상태",
+      "symbols": [
+        "IdleState"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 29,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/FSM/State/IState.cs",
+      "path": "Assets/Scripts/FSM/State/IState.cs",
+      "expected_blob_sha": "7ce161f0ee768f6582ee5be0720866a7713e612a",
+      "expected_size": 244,
+      "bytes": 244,
+      "blob_sha": "7ce161f0ee768f6582ee5be0720866a7713e612a",
+      "sha256": "0cd21c044e9b13f6f2c8d05d3188c162a5199000bb8efc876ebc26f930f7cee8",
+      "verified": true,
+      "has_replacement_character": false,
+      "restoration": "UTF-8 connector text re-encoded as codepage 949; exact blob and size matched",
+      "source_replacement_character_count": 0,
+      "original_encoding": "CP949",
+      "purpose": "상태 Enter/Execute/Exit 인터페이스",
+      "symbols": [
+        "IState"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 12,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/FSM/State/PatrolState.cs",
+      "path": "Assets/Scripts/FSM/State/PatrolState.cs",
+      "expected_blob_sha": "daec593e7718a04f06e1402d18c99d935511a1e3",
+      "expected_size": 1719,
+      "bytes": 1719,
+      "blob_sha": "daec593e7718a04f06e1402d18c99d935511a1e3",
+      "sha256": "24fc50d7beaff53c3fca7cd1c04005bdf01bdad47447f0e6181135ea72a9460b",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "NavMeshAgent의 반경 순찰·시간/거리 기반 목표 변경",
+      "symbols": [
+        "PatrolState"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 63,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/FSM/Transition/AttackTransition.cs",
+      "path": "Assets/Scripts/FSM/Transition/AttackTransition.cs",
+      "expected_blob_sha": "2a5ccd15f4075ed428176ef1287e364545331528",
+      "expected_size": 782,
+      "bytes": 782,
+      "blob_sha": "2a5ccd15f4075ed428176ef1287e364545331528",
+      "sha256": "5666effee08510ac9eec15c0b7f2262775a68a8b03793ebc302af60a39c20f76",
+      "verified": true,
+      "has_replacement_character": false,
+      "restoration": "UTF-8 connector text re-encoded as codepage 949; exact blob and size matched",
+      "source_replacement_character_count": 0,
+      "original_encoding": "CP949",
+      "purpose": "공격 거리와 지형 차폐 검사",
+      "symbols": [
+        "AttackTransition"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 31,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/FSM/Transition/ChaseTransition.cs",
+      "path": "Assets/Scripts/FSM/Transition/ChaseTransition.cs",
+      "expected_blob_sha": "056ecdd40d0d57432b3974564255c01254f04de1",
+      "expected_size": 410,
+      "bytes": 410,
+      "blob_sha": "056ecdd40d0d57432b3974564255c01254f04de1",
+      "sha256": "bb0c57cac94dfcf2f2c7c099bcdcf6e113efb0c45a8fdac495a4764c1864b3e9",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "추적 범위 검사",
+      "symbols": [
+        "ChaseTransition"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 22,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/FSM/Transition/DeadTransition.cs",
+      "path": "Assets/Scripts/FSM/Transition/DeadTransition.cs",
+      "expected_blob_sha": "e835b88232143c9f269593e02dfe8567c78a1f97",
+      "expected_size": 237,
+      "bytes": 237,
+      "blob_sha": "e835b88232143c9f269593e02dfe8567c78a1f97",
+      "sha256": "bdd81150437d89a0317eef25e2de21608070348e8221cc46422616e38939ee94",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "엔티티 사망 상태 검사",
+      "symbols": [
+        "DeadTransition"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 14,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/FSM/Transition/FleeTransition.cs",
+      "path": "Assets/Scripts/FSM/Transition/FleeTransition.cs",
+      "expected_blob_sha": "9e5c660c399920a21b9bbae66cabf34be58773d7",
+      "expected_size": 533,
+      "bytes": 533,
+      "blob_sha": "9e5c660c399920a21b9bbae66cabf34be58773d7",
+      "sha256": "e28b270f6d05eb5610d1fcbb684312960fe0c89a3763625696c7450933749764",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "목표 거리와 양쪽 HP 비율로 도주 조건 검사",
+      "symbols": [
+        "FleeTransition"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 25,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/FSM/Transition/IdleTransition.cs",
+      "path": "Assets/Scripts/FSM/Transition/IdleTransition.cs",
+      "expected_blob_sha": "256930064be00714373b9559fca416c76ca699cd",
+      "expected_size": 222,
+      "bytes": 222,
+      "blob_sha": "256930064be00714373b9559fca416c76ca699cd",
+      "sha256": "3b196561d84032e100b0f3e4cc239d293d4d5f74a1cbf9b46d764ce6bf89c35f",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "항상 참인 대기 전이 조건",
+      "symbols": [
+        "IdleTransition"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 14,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/FSM/Transition/ITransition.cs",
+      "path": "Assets/Scripts/FSM/Transition/ITransition.cs",
+      "expected_blob_sha": "976ad8c0f26a58d852971a7d7223710353536e2b",
+      "expected_size": 344,
+      "bytes": 344,
+      "blob_sha": "976ad8c0f26a58d852971a7d7223710353536e2b",
+      "sha256": "020c0205f92be9a355eb8c7052a352d035828cb27ade2e53504d1d6fd665fdb5",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "전이 조건 검사 추상 기반; 파일명과 달리 abstract class",
+      "symbols": [
+        "ITransition"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 19,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/FSM/Transition/PatrolTransition.cs",
+      "path": "Assets/Scripts/FSM/Transition/PatrolTransition.cs",
+      "expected_blob_sha": "76ca61e49e9aadb662d17cb3f6d0dd7c105d1451",
+      "expected_size": 228,
+      "bytes": 228,
+      "blob_sha": "76ca61e49e9aadb662d17cb3f6d0dd7c105d1451",
+      "sha256": "12d055d84444504a8cbad203afd2dc8ad4f0992f3c973d1c64b8925389a5d0c3",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "항상 참인 순찰 전이 조건",
+      "symbols": [
+        "PatrolTransition"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 16,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/IAttack.cs",
+      "path": "Assets/Scripts/IAttack.cs",
+      "expected_blob_sha": "f1599bbc3b356bb26797075dc683cfbdfb7fe09a",
+      "expected_size": 48,
+      "bytes": 48,
+      "blob_sha": "f1599bbc3b356bb26797075dc683cfbdfb7fe09a",
+      "sha256": "cfb637305bdece21bb4d40d5a5a39d3e09b032795a1e5190fc5c64e9e8e81a10",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "공격 동작 인터페이스",
+      "symbols": [
+        "IAttack"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 4,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/IDamageable.cs",
+      "path": "Assets/Scripts/IDamageable.cs",
+      "expected_blob_sha": "545be78820db61b30a96b0835dc4c6765f9a6f63",
+      "expected_size": 186,
+      "bytes": 186,
+      "blob_sha": "545be78820db61b30a96b0835dc4c6765f9a6f63",
+      "sha256": "e81dae29a9aad8a866ee6a718489741ffbb1693068646a35cbf9248bebd0e5d1",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "피해 처리·사망 상태 인터페이스",
+      "symbols": [
+        "IDamageable"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 9,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/KillLog/KillLog.cs",
+      "path": "Assets/Scripts/KillLog/KillLog.cs",
+      "expected_blob_sha": "be648fffc54a54e4469026d11492d2068bdeba7e",
+      "expected_size": 285,
+      "bytes": 285,
+      "blob_sha": "be648fffc54a54e4469026d11492d2068bdeba7e",
+      "sha256": "84545d0126ba69df579cb91fa38e342405d005bcd19afc8f122c70b4d497b206",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "사망자·무기·공격자 표시 데이터",
+      "symbols": [
+        "KillLog"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 13,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/KillLog/KillLogManager.cs",
+      "path": "Assets/Scripts/KillLog/KillLogManager.cs",
+      "expected_blob_sha": "5a7f73fb05b74227d4a01058d2099060e147f37d",
+      "expected_size": 9151,
+      "bytes": 9151,
+      "blob_sha": "5a7f73fb05b74227d4a01058d2099060e147f37d",
+      "sha256": "108175d9bbdeee47f296fd9a5389ff9d0ab3ab72a1f32aa8ae69c35a640fe6e0",
+      "verified": true,
+      "has_replacement_character": false,
+      "restoration": "UTF-8 connector text re-encoded as codepage 949; exact blob and size matched",
+      "source_replacement_character_count": 0,
+      "original_encoding": "CP949",
+      "purpose": "킬 로그 UI 생성·무기 아이콘·DOTween 출입·시간/수량 제거",
+      "symbols": [
+        "Pair",
+        "KillLogManager"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 310,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/MemoryPool.cs",
+      "path": "Assets/Scripts/MemoryPool.cs",
+      "expected_blob_sha": "265217165c9b899656ebe12b0d048d0d1c02fb21",
+      "expected_size": 4326,
+      "bytes": 4326,
+      "blob_sha": "265217165c9b899656ebe12b0d048d0d1c02fb21",
+      "sha256": "a92e3cd997fc5faa02469c5c9643f81f29621b7de59b4f82b90e83073d4afa01",
+      "verified": true,
+      "has_replacement_character": false,
+      "restoration": "UTF-8 connector text re-encoded as codepage 949; exact blob and size matched",
+      "source_replacement_character_count": 0,
+      "original_encoding": "CP949",
+      "purpose": "Component 풀의 확장·활성화·비활성화 관리",
+      "symbols": [
+        "MemoryPool",
+        "PoolItem"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 181,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/PlayerSpawner.cs",
+      "path": "Assets/Scripts/PlayerSpawner.cs",
+      "expected_blob_sha": "656201845ca97e68b4ecc054fbd27bd15e4a5c19",
+      "expected_size": 4794,
+      "bytes": 4794,
+      "blob_sha": "656201845ca97e68b4ecc054fbd27bd15e4a5c19",
+      "sha256": "a00f1a3bfae1f0717e5bee44721df20dd07a175f4211054fedea71ec37a575d7",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "플레이어 생성과 생성/사망 이벤트; 스킬 초기화 오버로드 미호출",
+      "symbols": [
+        "PlayerSpawner"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 144,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/ScoreBlock.cs",
+      "path": "Assets/Scripts/ScoreBlock.cs",
+      "expected_blob_sha": "a3d223fa77d84f796e2f21a445174edc381809eb",
+      "expected_size": 6923,
+      "bytes": 6923,
+      "blob_sha": "a3d223fa77d84f796e2f21a445174edc381809eb",
+      "sha256": "19653127adfd6d9151ae2ff79a0c995a54ce498b2859b1ab23d865ee1ee8b14d",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "점수 블록의 DOTween 이동·흡수와 플레이어 점수 반영",
+      "symbols": [
+        "ScoreBlock"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 193,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/ScoreBlockSpawner.cs",
+      "path": "Assets/Scripts/ScoreBlockSpawner.cs",
+      "expected_blob_sha": "4ec93c0327c0caa4bd6ca94c37be95f99257a84f",
+      "expected_size": 4198,
+      "bytes": 4198,
+      "blob_sha": "4ec93c0327c0caa4bd6ca94c37be95f99257a84f",
+      "sha256": "d4ad3beec152b7386b0e7e2c4bb4be8b2d37ec518e3127b779ffe0edd4a79f5d",
+      "verified": true,
+      "has_replacement_character": false,
+      "restoration": "UTF-8 connector text re-encoded as codepage 949; exact blob and size matched",
+      "source_replacement_character_count": 0,
+      "original_encoding": "CP949",
+      "purpose": "점수 블록 배치·사망 드롭·재생성 큐",
+      "symbols": [
+        "ScoreBlockSpawner"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 149,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/SessionManager.cs",
+      "path": "Assets/Scripts/SessionManager.cs",
+      "expected_blob_sha": "49e745a08d1e785b177d3c8cfbc0bd8f972a7a18",
+      "expected_size": 5813,
+      "bytes": 5813,
+      "blob_sha": "49e745a08d1e785b177d3c8cfbc0bd8f972a7a18",
+      "sha256": "ce33ba7e726fb4a0f38b8c72c57ebe637829478cf4c81d892afd755bd34d83ee",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "세션 시작/종료와 스포너·UI·카메라 이벤트 연결",
+      "symbols": [
+        "EntityBasicData",
+        "SessionManager"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 205,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/UI/Button/ButtonController.cs",
+      "path": "Assets/Scripts/UI/Button/ButtonController.cs",
+      "expected_blob_sha": "151851270339b27fa903dda16760388c5567d216",
+      "expected_size": 9543,
+      "bytes": 9543,
+      "blob_sha": "151851270339b27fa903dda16760388c5567d216",
+      "sha256": "3a93db40debae69423024cdef5998411707a4fa318fb56fa3482213cda0e81ef",
+      "verified": true,
+      "has_replacement_character": false,
+      "restoration": "UTF-8 connector text re-encoded as codepage 949; exact blob and size matched",
+      "source_replacement_character_count": 0,
+      "original_encoding": "CP949",
+      "purpose": "설정 패널 열기/닫기·DOTween 효과·버튼 제어",
+      "symbols": [
+        "ButtonController",
+        "AnimationType"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 341,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/UI/Button/LoadSceneButton.cs",
+      "path": "Assets/Scripts/UI/Button/LoadSceneButton.cs",
+      "expected_blob_sha": "ddca02825398001aa0657e5f806e0a8de40fce94",
+      "expected_size": 495,
+      "bytes": 495,
+      "blob_sha": "ddca02825398001aa0657e5f806e0a8de40fce94",
+      "sha256": "d46d3771781fc0b49a39e7af1d61d7a584d335fc13ac1feb9a0f78487013b248",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "버튼으로 지연 씬 전환",
+      "symbols": [
+        "LoadSceneButton"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 23,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/UI/Button/MultiButtonController.cs",
+      "path": "Assets/Scripts/UI/Button/MultiButtonController.cs",
+      "expected_blob_sha": "2d76b8b7f218ad92f8c774acba9e68782490f606",
+      "expected_size": 908,
+      "bytes": 908,
+      "blob_sha": "2d76b8b7f218ad92f8c774acba9e68782490f606",
+      "sha256": "57cfcf3285ded9f40e7a466e8121c9cc7bccd3f633eecf510b32ac6ba5fe8783",
+      "verified": true,
+      "has_replacement_character": false,
+      "restoration": "UTF-8 connector text re-encoded as codepage 1252; exact blob and size matched",
+      "source_replacement_character_count": 0,
+      "original_encoding": "CP949",
+      "purpose": "선택한 패널만 열기",
+      "symbols": [
+        "MultiButtonController"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 42,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/UI/GameOverUI.cs",
+      "path": "Assets/Scripts/UI/GameOverUI.cs",
+      "expected_blob_sha": "a859490e844d8b5fe673f30fdf77e857b855d993",
+      "expected_size": 2523,
+      "bytes": 2523,
+      "blob_sha": "a859490e844d8b5fe673f30fdf77e857b855d993",
+      "sha256": "acb933bed6a454c09c18ce2b1ba57d30cf8041926227917017e33c9fba817823",
+      "verified": true,
+      "has_replacement_character": false,
+      "restoration": "UTF-8 connector text re-encoded as codepage 949; exact blob and size matched",
+      "source_replacement_character_count": 0,
+      "original_encoding": "CP949",
+      "purpose": "종료 세션 랭킹·플레이어 행과 패널 애니메이션",
+      "symbols": [
+        "GameOverUI"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 89,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/UI/IconData.cs",
+      "path": "Assets/Scripts/UI/IconData.cs",
+      "expected_blob_sha": "37cea4b932cfad73e8201d9b1c0d9cd168820e75",
+      "expected_size": 593,
+      "bytes": 593,
+      "blob_sha": "37cea4b932cfad73e8201d9b1c0d9cd168820e75",
+      "sha256": "47a441ec4bacc838f71bacfb89c727a5096e1778f363a5d9ff02966377018807",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "스킬 아이콘 이미지·이름·설명과 선택 버튼 참조",
+      "symbols": [
+        "IconData"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 24,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/UI/InfoList.cs",
+      "path": "Assets/Scripts/UI/InfoList.cs",
+      "expected_blob_sha": "e88c3ace6eb9512ff4a72f620e8832a91dc87766",
+      "expected_size": 1660,
+      "bytes": 1660,
+      "blob_sha": "e88c3ace6eb9512ff4a72f620e8832a91dc87766",
+      "sha256": "94d4bac09d580565a6120be2ec1d84ca2ca37eca90d9d69897aabaa2779a7975",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "랭킹 행 텍스트·메달·배경 표시",
+      "symbols": [
+        "InfoList"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 70,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/UI/InfoListDateTime.cs",
+      "path": "Assets/Scripts/UI/InfoListDateTime.cs",
+      "expected_blob_sha": "c263520da36133673a534bd12c024bb5e4c28b6b",
+      "expected_size": 410,
+      "bytes": 410,
+      "blob_sha": "c263520da36133673a534bd12c024bb5e4c28b6b",
+      "sha256": "91b1570a159b29b4b19bc717e69d69b7d3ff1fc9e31e2ead8f75241597503261",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "랭킹 행에 기록 시각 표시 확장",
+      "symbols": [
+        "InfoListDateTime"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 18,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/UI/KillLogPanel.cs",
+      "path": "Assets/Scripts/UI/KillLogPanel.cs",
+      "expected_blob_sha": "661b38a948e161fc7db38db24a1d1d16fe8cc5df",
+      "expected_size": 442,
+      "bytes": 442,
+      "blob_sha": "661b38a948e161fc7db38db24a1d1d16fe8cc5df",
+      "sha256": "b9c25b6dce9d1b770e219c478dba77eae2e92cb1cfe8c2ddcd1ac31acf197f92",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "킬 로그 좌우 텍스트와 무기 이미지 표시",
+      "symbols": [
+        "KillLogPanel"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 20,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/UI/LiveRankingUI.cs",
+      "path": "Assets/Scripts/UI/LiveRankingUI.cs",
+      "expected_blob_sha": "e38183bf5084b77a8e3d1f5d233f8c0c3999a49c",
+      "expected_size": 2071,
+      "bytes": 2071,
+      "blob_sha": "e38183bf5084b77a8e3d1f5d233f8c0c3999a49c",
+      "sha256": "cc784adf48e047937b214580534ca996fca6661dbd114769e7143f13bb11e5fa",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "활성 세션 엔티티 랭킹·Player 행 갱신",
+      "symbols": [
+        "LiveRankingUI"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 82,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/UI/LvExpUI.cs",
+      "path": "Assets/Scripts/UI/LvExpUI.cs",
+      "expected_blob_sha": "f3ffd4073bcee6caa35bbe6a62bdc0d05d8e8280",
+      "expected_size": 512,
+      "bytes": 512,
+      "blob_sha": "f3ffd4073bcee6caa35bbe6a62bdc0d05d8e8280",
+      "sha256": "6b5bb04c0ec16c068b765931c96ce3658514605b239cbafdbd2d6fa5c2163158",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "레벨 텍스트와 경험치 슬라이더 표시",
+      "symbols": [
+        "LvExpUI"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 24,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/UI/RankingUI.cs",
+      "path": "Assets/Scripts/UI/RankingUI.cs",
+      "expected_blob_sha": "bb11e7a8fc59a154468c09fd324fd378d1b36a70",
+      "expected_size": 786,
+      "bytes": 786,
+      "blob_sha": "bb11e7a8fc59a154468c09fd324fd378d1b36a70",
+      "sha256": "89bec230a81c663ff30ca0cc37370e01265b8a067f0ebdeaeb7f8d096cc56cc3",
+      "verified": true,
+      "has_replacement_character": false,
+      "restoration": "UTF-8 connector text re-encoded as codepage 1252; exact blob and size matched",
+      "source_replacement_character_count": 0,
+      "original_encoding": "CP949",
+      "purpose": "실시간 랭킹을 텍스트로 표시",
+      "symbols": [
+        "RankingUI"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 28,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/UI/SkillIconManager.cs",
+      "path": "Assets/Scripts/UI/SkillIconManager.cs",
+      "expected_blob_sha": "37dab01c893053f8c4d6338012376b118b1d9f0b",
+      "expected_size": 2370,
+      "bytes": 2370,
+      "blob_sha": "37dab01c893053f8c4d6338012376b118b1d9f0b",
+      "sha256": "6e01b3bb561ae6f32459705b958164920bd8f596a381c2ba3fe46b6b41d681d2",
+      "verified": true,
+      "has_replacement_character": false,
+      "restoration": "UTF-8 connector text re-encoded as codepage 949; exact blob and size matched",
+      "source_replacement_character_count": 0,
+      "original_encoding": "CP949",
+      "purpose": "무기/스킬 후보 생성·선택 아이콘·선택 이벤트",
+      "symbols": [
+        "SkillIconManager"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 85,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/UI/UIController.cs",
+      "path": "Assets/Scripts/UI/UIController.cs",
+      "expected_blob_sha": "e163bc642e03e5693dd57d08a03d736f1d299f26",
+      "expected_size": 1459,
+      "bytes": 1459,
+      "blob_sha": "e163bc642e03e5693dd57d08a03d736f1d299f26",
+      "sha256": "29db3bf8e7b73b1352aaa5a952f665538629d0c7166e07900a4f0f5ad518b862",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "플레이어 사망/레벨/경험치 이벤트와 HUD 연결",
+      "symbols": [
+        "UIController"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 53,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/Utils/Utils.cs",
+      "path": "Assets/Scripts/Utils/Utils.cs",
+      "expected_blob_sha": "d9191022662a5f3c263030aa0c3adc82e6d66a6b",
+      "expected_size": 798,
+      "bytes": 798,
+      "blob_sha": "d9191022662a5f3c263030aa0c3adc82e6d66a6b",
+      "sha256": "61586da0bd67205deb657fdd807296ee7afd000c78022c37fb193d691bc9aa96",
+      "verified": true,
+      "has_replacement_character": false,
+      "restoration": "UTF-8 connector text re-encoded as codepage 1252; exact blob and size matched",
+      "source_replacement_character_count": 0,
+      "original_encoding": "CP949",
+      "purpose": "반경 내 임의 위치·목표 근접 검사",
+      "symbols": [
+        "Utils"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 32,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/Weapon/AxeWeapon.cs",
+      "path": "Assets/Scripts/Weapon/AxeWeapon.cs",
+      "expected_blob_sha": "66d499c3cee7078781b534e23937ce142b4fdaa7",
+      "expected_size": 120,
+      "bytes": 120,
+      "blob_sha": "66d499c3cee7078781b534e23937ce142b4fdaa7",
+      "sha256": "4c8cdb9b51a59f1063f1e461a21fdd2cd57adf561b65d39c4fb812e7292156e7",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "WeaponBase를 상속하는 도끼 타입; 추가 구현 없음",
+      "symbols": [
+        "AxeWeapon"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 7,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/Weapon/BowWeapon.cs",
+      "path": "Assets/Scripts/Weapon/BowWeapon.cs",
+      "expected_blob_sha": "ce67b007f069f0b2361daf186347431cf02a7c9d",
+      "expected_size": 94,
+      "bytes": 94,
+      "blob_sha": "ce67b007f069f0b2361daf186347431cf02a7c9d",
+      "sha256": "64d277273746d642ae115f7a953c7dd8cecaf324598b50715ee0de0104bed57b",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "WeaponBase를 상속하는 활 타입; 추가 구현 없음",
+      "symbols": [
+        "BowWeapon"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 6,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/Weapon/LevelUP/ILevelup.cs",
+      "path": "Assets/Scripts/Weapon/LevelUP/ILevelup.cs",
+      "expected_blob_sha": "5720441d620b51639a328c613e2ab4acc7164b87",
+      "expected_size": 57,
+      "bytes": 57,
+      "blob_sha": "5720441d620b51639a328c613e2ab4acc7164b87",
+      "sha256": "e634a85b781b38d9b1b142e2e858d58b8dbd0bedfd0023acb478996bb86b096c",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "LevelUp 동작 인터페이스",
+      "symbols": [
+        "ILevelup"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 4,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/Weapon/Projectile/ProjectileStorage.cs",
+      "path": "Assets/Scripts/Weapon/Projectile/ProjectileStorage.cs",
+      "expected_blob_sha": "6838fc034e4ed3d8a89e5c7a36722d7db9047d17",
+      "expected_size": 809,
+      "bytes": 809,
+      "blob_sha": "6838fc034e4ed3d8a89e5c7a36722d7db9047d17",
+      "sha256": "35e84ebc98f1be84669891e6a006fa046f8422ad9db855b4d8c8bb5c38ca9fe9",
+      "verified": true,
+      "has_replacement_character": false,
+      "restoration": "UTF-8 connector text re-encoded as codepage 949; exact blob and size matched",
+      "source_replacement_character_count": 0,
+      "original_encoding": "CP949",
+      "purpose": "투사체 원형과 마지막 발사 시각 보관; 제외된 Projectile 의존",
+      "symbols": [
+        "ProjectileStorage"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 33,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/Weapon/Projectile/Straight.cs",
+      "path": "Assets/Scripts/Weapon/Projectile/Straight.cs",
+      "expected_blob_sha": "c6cafd3bd91488fe2a943502abbbc510eaec0435",
+      "expected_size": 436,
+      "bytes": 436,
+      "blob_sha": "c6cafd3bd91488fe2a943502abbbc510eaec0435",
+      "sha256": "619c4cc3fadc1369a555e356e8f7a352f83053a1eb2e57b26c336da0a0a0e6f7",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "제외된 Projectile을 상속하는 직선 이동 구현",
+      "symbols": [
+        "Straight"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 14,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/Weapon/Skill/BaseSkill.cs",
+      "path": "Assets/Scripts/Weapon/Skill/BaseSkill.cs",
+      "expected_blob_sha": "67c7b8f79dcf7e0d53cf80e82961af99d4265109",
+      "expected_size": 474,
+      "bytes": 474,
+      "blob_sha": "67c7b8f79dcf7e0d53cf80e82961af99d4265109",
+      "sha256": "298f84186a147059c4aa705972f8dac78785bdbcbfc7c3826cb346ff4cd6d85f",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "스킬 SO·소유 엔티티 초기화와 레벨 증가",
+      "symbols": [
+        "BaseSkill"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 23,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/Weapon/Skill/Healthup.cs",
+      "path": "Assets/Scripts/Weapon/Skill/Healthup.cs",
+      "expected_blob_sha": "826bac17224131238d0fb0fec81ae5fc80840748",
+      "expected_size": 320,
+      "bytes": 320,
+      "blob_sha": "826bac17224131238d0fb0fec81ae5fc80840748",
+      "sha256": "3f543dd15955d06d5e402236540ccda252cdd9697395b25da28158668f95c39c",
+      "verified": true,
+      "has_replacement_character": false,
+      "restoration": "UTF-8 connector text re-encoded as codepage 1252; exact blob and size matched",
+      "source_replacement_character_count": 0,
+      "original_encoding": "CP949",
+      "purpose": "레벨업 시 최대 HP 증가",
+      "symbols": [
+        "Healthup"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 16,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/Scripts/Weapon/WeaponBase.cs",
+      "path": "Assets/Scripts/Weapon/WeaponBase.cs",
+      "expected_blob_sha": "6a91fd054bb38cc8524aeadb146894ee78262bf2",
+      "expected_size": 1953,
+      "bytes": 1953,
+      "blob_sha": "6a91fd054bb38cc8524aeadb146894ee78262bf2",
+      "sha256": "9bb99ac4087c9ccbe2568c8f9b1e82d79a7b8b59702775afd0b25cfe379b241d",
+      "verified": true,
+      "has_replacement_character": false,
+      "restoration": "UTF-8 connector text re-encoded as codepage 949; exact blob and size matched",
+      "source_replacement_character_count": 0,
+      "original_encoding": "CP949",
+      "purpose": "SO 무기 수치·투사체별 발사 주기·생성·레벨업",
+      "symbols": [
+        "WeaponBase"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 59,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/SO/Projectile/SOProjectile.cs",
+      "path": "Assets/SO/Projectile/SOProjectile.cs",
+      "expected_blob_sha": "e1d52ef1a16763fe97003e655cd9f8b0da7ccc27",
+      "expected_size": 404,
+      "bytes": 404,
+      "blob_sha": "e1d52ef1a16763fe97003e655cd9f8b0da7ccc27",
+      "sha256": "8ebb4217813637bc43f784ee7291f998f34ce1bc51a392b4a6eb54d35fdb42fa",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "투사체 수치·이름·아이콘의 ScriptableObject 클래스",
+      "symbols": [
+        "SOProjectile"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 17,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/SO/Skill/SOSkill.cs",
+      "path": "Assets/SO/Skill/SOSkill.cs",
+      "expected_blob_sha": "0cc3f6151301bb3a12a0a9152a247078d70b78ef",
+      "expected_size": 251,
+      "bytes": 251,
+      "blob_sha": "0cc3f6151301bb3a12a0a9152a247078d70b78ef",
+      "sha256": "d423e98427c7a2be96fe36a75e8734ad59cf65a41c616115d2ea783fc14399a4",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "스킬 이름·아이콘·레벨·설명 클래스",
+      "symbols": [
+        "SOSkill"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 12,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Assets/SO/Weapon/SOWeapon.cs",
+      "path": "Assets/SO/Weapon/SOWeapon.cs",
+      "expected_blob_sha": "597031ebadfa08b58eb798ef5275fa933baa1e32",
+      "expected_size": 466,
+      "bytes": 466,
+      "blob_sha": "597031ebadfa08b58eb798ef5275fa933baa1e32",
+      "sha256": "c8d5933994b3066efadea25d3d4f2a974c9dbc1852ee7046f427ab327253a8f0",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "무기 이름·아이콘·레벨·수치 배율 클래스",
+      "symbols": [
+        "SOWeapon"
+      ],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 18,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Packages/manifest.json",
+      "path": "ReviewContext/Packages/manifest.json",
+      "expected_blob_sha": "d338e3d5ac598ec7c4e1020adee428f2228f0eb1",
+      "expected_size": 1972,
+      "bytes": 1972,
+      "blob_sha": "d338e3d5ac598ec7c4e1020adee428f2228f0eb1",
+      "sha256": "312827790842851a211dae3a0935c5cc4873da6b5fa588c57856e1e7bdd58a12",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "직접 패키지 의존성 및 요청 버전 문맥",
+      "symbols": [],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 49,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "Packages/packages-lock.json",
+      "path": "ReviewContext/Packages/packages-lock.json",
+      "expected_blob_sha": "6a27c6c6d849b4322a1b4c5eeeb5a6238c7b5235",
+      "expected_size": 11396,
+      "bytes": 11396,
+      "blob_sha": "6a27c6c6d849b4322a1b4c5eeeb5a6238c7b5235",
+      "sha256": "4a143e8553bd19777b50c1a2c30f3c3947df622d3c406270f8bfa67420338bf7",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "resolved 패키지 버전·출처·의존성 문맥",
+      "symbols": [],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 434,
+        "cr_without_lf": 0
+      }
+    },
+    {
+      "source_path": "ProjectSettings/ProjectVersion.txt",
+      "path": "ReviewContext/ProjectSettings/ProjectVersion.txt",
+      "expected_blob_sha": "31459c03d6428e40ba10c680f98c69b67555c49c",
+      "expected_size": 85,
+      "bytes": 85,
+      "blob_sha": "31459c03d6428e40ba10c680f98c69b67555c49c",
+      "sha256": "f1e325df65256c89ec3da81c1aa37a8768d1070e90073904aa31fa0f62e38cf4",
+      "verified": true,
+      "has_replacement_character": false,
+      "source_replacement_character_count": 0,
+      "original_encoding": "UTF-8",
+      "purpose": "Unity Editor 버전·리비전 문맥",
+      "symbols": [],
+      "bom": "none",
+      "newlines": {
+        "crlf": 0,
+        "lf_without_cr": 2,
+        "cr_without_lf": 0
+      }
+    }
+  ],
+  "final_inventory": [
+    {
+      "path": ".gitignore",
+      "kind": "generated_document_or_control",
+      "bytes": 4094,
+      "sha256": "05f3df337dbe6017c1dac5bfc57f4cfe8d263f9a25ca16582297a95ab0140fff"
+    },
+    {
+      "path": "Assets/SO/Projectile/SOProjectile.cs",
+      "kind": "project_csharp",
+      "bytes": 404,
+      "sha256": "8ebb4217813637bc43f784ee7291f998f34ce1bc51a392b4a6eb54d35fdb42fa"
+    },
+    {
+      "path": "Assets/SO/Skill/SOSkill.cs",
+      "kind": "project_csharp",
+      "bytes": 251,
+      "sha256": "d423e98427c7a2be96fe36a75e8734ad59cf65a41c616115d2ea783fc14399a4"
+    },
+    {
+      "path": "Assets/SO/Weapon/SOWeapon.cs",
+      "kind": "project_csharp",
+      "bytes": 466,
+      "sha256": "c8d5933994b3066efadea25d3d4f2a974c9dbc1852ee7046f427ab327253a8f0"
+    },
+    {
+      "path": "Assets/Scripts/Animation/EntityAnimation.cs",
+      "kind": "project_csharp",
+      "bytes": 1385,
+      "sha256": "ad2d0a6478171e564f7ee81890d120b69da5cd610db9766a33a12ed398060f46"
+    },
+    {
+      "path": "Assets/Scripts/DB/DatabaseInitializer.cs",
+      "kind": "project_csharp",
+      "bytes": 13614,
+      "sha256": "9e9a5309b427c296d078086bc11a4ee8b36944fc1363772e18b8df4a6e4a4cdc"
+    },
+    {
+      "path": "Assets/Scripts/DB/DatabaseManager.cs",
+      "kind": "project_csharp",
+      "bytes": 16558,
+      "sha256": "1ae0e987ff57b02dce9a99f08fc35dd8e21f88e2355c360c43166f6205e04ead"
+    },
+    {
+      "path": "Assets/Scripts/DB/EntityGameManager.cs",
+      "kind": "project_csharp",
+      "bytes": 11140,
+      "sha256": "70aeb148c65368fbdf44fdeba2e30fc8b961d4e80111d58ae49aa9da543eb295"
+    },
+    {
+      "path": "Assets/Scripts/DB/EntityRepository.cs",
+      "kind": "project_csharp",
+      "bytes": 5247,
+      "sha256": "c0dbea6d23de5a84b59bee41855b9918c6681c8c7bdc45afdb96733d0b59ff28"
+    },
+    {
+      "path": "Assets/Scripts/DB/GameSessionManager.cs",
+      "kind": "project_csharp",
+      "bytes": 15203,
+      "sha256": "906a3570093d6891854546d4ba736940ee9abb96897108bd351bdf64f53c921b"
+    },
+    {
+      "path": "Assets/Scripts/DB/GameSessionRepository.cs",
+      "kind": "project_csharp",
+      "bytes": 5209,
+      "sha256": "b69e6a094fb9511a9d28c52e5de82db3c54f15e67cb88e300a86eed342669a4e"
+    },
+    {
+      "path": "Assets/Scripts/DB/Models/EntityModel.cs",
+      "kind": "project_csharp",
+      "bytes": 2801,
+      "sha256": "c9c45bcfcef3d47b0a2a152a832a4d8a9ba2b17260e23ceec34cb305984374d9"
+    },
+    {
+      "path": "Assets/Scripts/DB/Models/GameSessionModel.cs",
+      "kind": "project_csharp",
+      "bytes": 2498,
+      "sha256": "86c9186ffb53b484ce7a98ab64d327593c8c11827646ecd701c07a7fd7e73de2"
+    },
+    {
+      "path": "Assets/Scripts/DB/Models/PlayerModel.cs",
+      "kind": "project_csharp",
+      "bytes": 2072,
+      "sha256": "92747c7fc7592e4367652fc4c1ee2a91234967616b28016198b21c5793fccc89"
+    },
+    {
+      "path": "Assets/Scripts/DB/Models/RankingData.cs",
+      "kind": "project_csharp",
+      "bytes": 2053,
+      "sha256": "949459c16c2162ed860b8470fa4413dc7f47f603c7c2235c170c658490f9eba1"
+    },
+    {
+      "path": "Assets/Scripts/DB/PlayerRepository.cs",
+      "kind": "project_csharp",
+      "bytes": 7499,
+      "sha256": "c63fcb48af626d2bd3c1c65347736cd2874b3cb4c3273e19cab4be4e7640c343"
+    },
+    {
+      "path": "Assets/Scripts/DB/RankingManager.cs",
+      "kind": "project_csharp",
+      "bytes": 17253,
+      "sha256": "1aa9e3c9b416a5d06b0e8eea2c105a6538a4537d3f7afc8785a54904781cc6e2"
+    },
+    {
+      "path": "Assets/Scripts/DB/SessionEntityRepository.cs",
+      "kind": "project_csharp",
+      "bytes": 12057,
+      "sha256": "0d7a52c41420d0655c925c8a2734a6664361a627a6924209ab9e76001997020f"
+    },
+    {
+      "path": "Assets/Scripts/DamagePopup/DamagePopup.cs",
+      "kind": "project_csharp",
+      "bytes": 1683,
+      "sha256": "d1c73cb55ee2f60c7749bb829e42996a639087f9839a93b54db5a78a7656b993"
+    },
+    {
+      "path": "Assets/Scripts/DamagePopup/DamagePopupManager.cs",
+      "kind": "project_csharp",
+      "bytes": 657,
+      "sha256": "5be2902f6ffa21e3c93eaad80c1cfacff4ad2232003e26f937c330d2854283e8"
+    },
+    {
+      "path": "Assets/Scripts/EnemySpawner.cs",
+      "kind": "project_csharp",
+      "bytes": 4554,
+      "sha256": "c8639ab04b3acdfb548afc1fbf37710f34ce009e9246adbc031d0f11f226302b"
+    },
+    {
+      "path": "Assets/Scripts/Entity/Enemy.cs",
+      "kind": "project_csharp",
+      "bytes": 2017,
+      "sha256": "5d9d1855aca511cc1c6ea84705d1f140beda646be53cbea1c8ffaf115e597bcc"
+    },
+    {
+      "path": "Assets/Scripts/Entity/Entity.cs",
+      "kind": "project_csharp",
+      "bytes": 6547,
+      "sha256": "e4904fdc82705875d38e17a128cbc3a9c56a9d27d88effccb82bd818ad8a9766"
+    },
+    {
+      "path": "Assets/Scripts/Entity/EntityData.cs",
+      "kind": "project_csharp",
+      "bytes": 1366,
+      "sha256": "384f15b2e28686d7e26ca8484a3d7bf611d2bbd2601cf69d3beb1c5cbbe00177"
+    },
+    {
+      "path": "Assets/Scripts/Entity/EntityInfo.cs",
+      "kind": "project_csharp",
+      "bytes": 668,
+      "sha256": "6baf8143d43d7e21aebc3d0dab57b8f82ff0be3932a24d1012b27dcf649d26f1"
+    },
+    {
+      "path": "Assets/Scripts/Entity/EntityUI.cs",
+      "kind": "project_csharp",
+      "bytes": 854,
+      "sha256": "a86c5c5e079827cf77d3294048063c6a59042371679c04c67e997a0df752b597"
+    },
+    {
+      "path": "Assets/Scripts/Entity/Player.cs",
+      "kind": "project_csharp",
+      "bytes": 5770,
+      "sha256": "2f1057010b8df918b13c3105bc68997e8a003f3f0e5d2f8b58acd0c5568ffe87"
+    },
+    {
+      "path": "Assets/Scripts/Entity/Player/LevelupStorage.cs",
+      "kind": "project_csharp",
+      "bytes": 2519,
+      "sha256": "815f2fffe8c00f990e41b1e48f01eee3e8161b541ba5e409f495af37472559bd"
+    },
+    {
+      "path": "Assets/Scripts/EntitySpawner.cs",
+      "kind": "project_csharp",
+      "bytes": 2851,
+      "sha256": "e20bf56969721aaf18ed853034c96f536efa40039b5740b4c12a590a51efdb4f"
+    },
+    {
+      "path": "Assets/Scripts/FSM/AIInput.cs",
+      "kind": "project_csharp",
+      "bytes": 2059,
+      "sha256": "4f284474c743215c3f4f3253fe85cc244573a0c99d51fd742ce02c2cff377207"
+    },
+    {
+      "path": "Assets/Scripts/FSM/FSM.cs",
+      "kind": "project_csharp",
+      "bytes": 3508,
+      "sha256": "0882075424fa66dd9226afcfc5ef5d1c663d459e4734bc6c9e505acef0840fb2"
+    },
+    {
+      "path": "Assets/Scripts/FSM/State/AttackState.cs",
+      "kind": "project_csharp",
+      "bytes": 1448,
+      "sha256": "25c60956b403aab69f73c178a175e1f21003720d8987841af4071dfe0574bf25"
+    },
+    {
+      "path": "Assets/Scripts/FSM/State/ChaseState.cs",
+      "kind": "project_csharp",
+      "bytes": 915,
+      "sha256": "dd521f24b71415e5a7844cba2401780e442c224a6147524d0e1aa953149b6ca1"
+    },
+    {
+      "path": "Assets/Scripts/FSM/State/DeadState.cs",
+      "kind": "project_csharp",
+      "bytes": 702,
+      "sha256": "1fc6ba8277e92c1521a61bc09a1fc157d462931a8e0fa658f4245e8d89ee2541"
+    },
+    {
+      "path": "Assets/Scripts/FSM/State/FleeState.cs",
+      "kind": "project_csharp",
+      "bytes": 1198,
+      "sha256": "ee2730a0005d32eb43390f714dcae76df82084f85a16e880663845402097a5fb"
+    },
+    {
+      "path": "Assets/Scripts/FSM/State/IState.cs",
+      "kind": "project_csharp",
+      "bytes": 244,
+      "sha256": "0cd21c044e9b13f6f2c8d05d3188c162a5199000bb8efc876ebc26f930f7cee8"
+    },
+    {
+      "path": "Assets/Scripts/FSM/State/IdleState.cs",
+      "kind": "project_csharp",
+      "bytes": 489,
+      "sha256": "39803282dd2f6bbb44ea73256887f5428cb2b6343f9284191b9c26fe23124fa3"
+    },
+    {
+      "path": "Assets/Scripts/FSM/State/PatrolState.cs",
+      "kind": "project_csharp",
+      "bytes": 1719,
+      "sha256": "24fc50d7beaff53c3fca7cd1c04005bdf01bdad47447f0e6181135ea72a9460b"
+    },
+    {
+      "path": "Assets/Scripts/FSM/Transition/AttackTransition.cs",
+      "kind": "project_csharp",
+      "bytes": 782,
+      "sha256": "5666effee08510ac9eec15c0b7f2262775a68a8b03793ebc302af60a39c20f76"
+    },
+    {
+      "path": "Assets/Scripts/FSM/Transition/ChaseTransition.cs",
+      "kind": "project_csharp",
+      "bytes": 410,
+      "sha256": "bb0c57cac94dfcf2f2c7c099bcdcf6e113efb0c45a8fdac495a4764c1864b3e9"
+    },
+    {
+      "path": "Assets/Scripts/FSM/Transition/DeadTransition.cs",
+      "kind": "project_csharp",
+      "bytes": 237,
+      "sha256": "bdd81150437d89a0317eef25e2de21608070348e8221cc46422616e38939ee94"
+    },
+    {
+      "path": "Assets/Scripts/FSM/Transition/FleeTransition.cs",
+      "kind": "project_csharp",
+      "bytes": 533,
+      "sha256": "e28b270f6d05eb5610d1fcbb684312960fe0c89a3763625696c7450933749764"
+    },
+    {
+      "path": "Assets/Scripts/FSM/Transition/ITransition.cs",
+      "kind": "project_csharp",
+      "bytes": 344,
+      "sha256": "020c0205f92be9a355eb8c7052a352d035828cb27ade2e53504d1d6fd665fdb5"
+    },
+    {
+      "path": "Assets/Scripts/FSM/Transition/IdleTransition.cs",
+      "kind": "project_csharp",
+      "bytes": 222,
+      "sha256": "3b196561d84032e100b0f3e4cc239d293d4d5f74a1cbf9b46d764ce6bf89c35f"
+    },
+    {
+      "path": "Assets/Scripts/FSM/Transition/PatrolTransition.cs",
+      "kind": "project_csharp",
+      "bytes": 228,
+      "sha256": "12d055d84444504a8cbad203afd2dc8ad4f0992f3c973d1c64b8925389a5d0c3"
+    },
+    {
+      "path": "Assets/Scripts/IAttack.cs",
+      "kind": "project_csharp",
+      "bytes": 48,
+      "sha256": "cfb637305bdece21bb4d40d5a5a39d3e09b032795a1e5190fc5c64e9e8e81a10"
+    },
+    {
+      "path": "Assets/Scripts/IDamageable.cs",
+      "kind": "project_csharp",
+      "bytes": 186,
+      "sha256": "e81dae29a9aad8a866ee6a718489741ffbb1693068646a35cbf9248bebd0e5d1"
+    },
+    {
+      "path": "Assets/Scripts/KillLog/KillLog.cs",
+      "kind": "project_csharp",
+      "bytes": 285,
+      "sha256": "84545d0126ba69df579cb91fa38e342405d005bcd19afc8f122c70b4d497b206"
+    },
+    {
+      "path": "Assets/Scripts/KillLog/KillLogManager.cs",
+      "kind": "project_csharp",
+      "bytes": 9151,
+      "sha256": "108175d9bbdeee47f296fd9a5389ff9d0ab3ab72a1f32aa8ae69c35a640fe6e0"
+    },
+    {
+      "path": "Assets/Scripts/MemoryPool.cs",
+      "kind": "project_csharp",
+      "bytes": 4326,
+      "sha256": "a92e3cd997fc5faa02469c5c9643f81f29621b7de59b4f82b90e83073d4afa01"
+    },
+    {
+      "path": "Assets/Scripts/PlayerSpawner.cs",
+      "kind": "project_csharp",
+      "bytes": 4794,
+      "sha256": "a00f1a3bfae1f0717e5bee44721df20dd07a175f4211054fedea71ec37a575d7"
+    },
+    {
+      "path": "Assets/Scripts/ScoreBlock.cs",
+      "kind": "project_csharp",
+      "bytes": 6923,
+      "sha256": "19653127adfd6d9151ae2ff79a0c995a54ce498b2859b1ab23d865ee1ee8b14d"
+    },
+    {
+      "path": "Assets/Scripts/ScoreBlockSpawner.cs",
+      "kind": "project_csharp",
+      "bytes": 4198,
+      "sha256": "d4ad3beec152b7386b0e7e2c4bb4be8b2d37ec518e3127b779ffe0edd4a79f5d"
+    },
+    {
+      "path": "Assets/Scripts/SessionManager.cs",
+      "kind": "project_csharp",
+      "bytes": 5813,
+      "sha256": "ce33ba7e726fb4a0f38b8c72c57ebe637829478cf4c81d892afd755bd34d83ee"
+    },
+    {
+      "path": "Assets/Scripts/UI/Button/ButtonController.cs",
+      "kind": "project_csharp",
+      "bytes": 9543,
+      "sha256": "3a93db40debae69423024cdef5998411707a4fa318fb56fa3482213cda0e81ef"
+    },
+    {
+      "path": "Assets/Scripts/UI/Button/LoadSceneButton.cs",
+      "kind": "project_csharp",
+      "bytes": 495,
+      "sha256": "d46d3771781fc0b49a39e7af1d61d7a584d335fc13ac1feb9a0f78487013b248"
+    },
+    {
+      "path": "Assets/Scripts/UI/Button/MultiButtonController.cs",
+      "kind": "project_csharp",
+      "bytes": 908,
+      "sha256": "57cfcf3285ded9f40e7a466e8121c9cc7bccd3f633eecf510b32ac6ba5fe8783"
+    },
+    {
+      "path": "Assets/Scripts/UI/GameOverUI.cs",
+      "kind": "project_csharp",
+      "bytes": 2523,
+      "sha256": "acb933bed6a454c09c18ce2b1ba57d30cf8041926227917017e33c9fba817823"
+    },
+    {
+      "path": "Assets/Scripts/UI/IconData.cs",
+      "kind": "project_csharp",
+      "bytes": 593,
+      "sha256": "47a441ec4bacc838f71bacfb89c727a5096e1778f363a5d9ff02966377018807"
+    },
+    {
+      "path": "Assets/Scripts/UI/InfoList.cs",
+      "kind": "project_csharp",
+      "bytes": 1660,
+      "sha256": "94d4bac09d580565a6120be2ec1d84ca2ca37eca90d9d69897aabaa2779a7975"
+    },
+    {
+      "path": "Assets/Scripts/UI/InfoListDateTime.cs",
+      "kind": "project_csharp",
+      "bytes": 410,
+      "sha256": "91b1570a159b29b4b19bc717e69d69b7d3ff1fc9e31e2ead8f75241597503261"
+    },
+    {
+      "path": "Assets/Scripts/UI/KillLogPanel.cs",
+      "kind": "project_csharp",
+      "bytes": 442,
+      "sha256": "b9c25b6dce9d1b770e219c478dba77eae2e92cb1cfe8c2ddcd1ac31acf197f92"
+    },
+    {
+      "path": "Assets/Scripts/UI/LiveRankingUI.cs",
+      "kind": "project_csharp",
+      "bytes": 2071,
+      "sha256": "cc784adf48e047937b214580534ca996fca6661dbd114769e7143f13bb11e5fa"
+    },
+    {
+      "path": "Assets/Scripts/UI/LvExpUI.cs",
+      "kind": "project_csharp",
+      "bytes": 512,
+      "sha256": "6b5bb04c0ec16c068b765931c96ce3658514605b239cbafdbd2d6fa5c2163158"
+    },
+    {
+      "path": "Assets/Scripts/UI/RankingUI.cs",
+      "kind": "project_csharp",
+      "bytes": 786,
+      "sha256": "89bec230a81c663ff30ca0cc37370e01265b8a067f0ebdeaeb7f8d096cc56cc3"
+    },
+    {
+      "path": "Assets/Scripts/UI/SkillIconManager.cs",
+      "kind": "project_csharp",
+      "bytes": 2370,
+      "sha256": "6e01b3bb561ae6f32459705b958164920bd8f596a381c2ba3fe46b6b41d681d2"
+    },
+    {
+      "path": "Assets/Scripts/UI/UIController.cs",
+      "kind": "project_csharp",
+      "bytes": 1459,
+      "sha256": "29db3bf8e7b73b1352aaa5a952f665538629d0c7166e07900a4f0f5ad518b862"
+    },
+    {
+      "path": "Assets/Scripts/Utils/Utils.cs",
+      "kind": "project_csharp",
+      "bytes": 798,
+      "sha256": "61586da0bd67205deb657fdd807296ee7afd000c78022c37fb193d691bc9aa96"
+    },
+    {
+      "path": "Assets/Scripts/Weapon/AxeWeapon.cs",
+      "kind": "project_csharp",
+      "bytes": 120,
+      "sha256": "4c8cdb9b51a59f1063f1e461a21fdd2cd57adf561b65d39c4fb812e7292156e7"
+    },
+    {
+      "path": "Assets/Scripts/Weapon/BowWeapon.cs",
+      "kind": "project_csharp",
+      "bytes": 94,
+      "sha256": "64d277273746d642ae115f7a953c7dd8cecaf324598b50715ee0de0104bed57b"
+    },
+    {
+      "path": "Assets/Scripts/Weapon/LevelUP/ILevelup.cs",
+      "kind": "project_csharp",
+      "bytes": 57,
+      "sha256": "e634a85b781b38d9b1b142e2e858d58b8dbd0bedfd0023acb478996bb86b096c"
+    },
+    {
+      "path": "Assets/Scripts/Weapon/Projectile/ProjectileStorage.cs",
+      "kind": "project_csharp",
+      "bytes": 809,
+      "sha256": "35e84ebc98f1be84669891e6a006fa046f8422ad9db855b4d8c8bb5c38ca9fe9"
+    },
+    {
+      "path": "Assets/Scripts/Weapon/Projectile/Straight.cs",
+      "kind": "project_csharp",
+      "bytes": 436,
+      "sha256": "619c4cc3fadc1369a555e356e8f7a352f83053a1eb2e57b26c336da0a0a0e6f7"
+    },
+    {
+      "path": "Assets/Scripts/Weapon/Skill/BaseSkill.cs",
+      "kind": "project_csharp",
+      "bytes": 474,
+      "sha256": "298f84186a147059c4aa705972f8dac78785bdbcbfc7c3826cb346ff4cd6d85f"
+    },
+    {
+      "path": "Assets/Scripts/Weapon/Skill/Healthup.cs",
+      "kind": "project_csharp",
+      "bytes": 320,
+      "sha256": "3f543dd15955d06d5e402236540ccda252cdd9697395b25da28158668f95c39c"
+    },
+    {
+      "path": "Assets/Scripts/Weapon/WeaponBase.cs",
+      "kind": "project_csharp",
+      "bytes": 1953,
+      "sha256": "9bb99ac4087c9ccbe2568c8f9b1e82d79a7b8b59702775afd0b25cfe379b241d"
+    },
+    {
+      "path": "Assets/Scripts/etc/PlayerDataManager.cs",
+      "kind": "project_csharp",
+      "bytes": 901,
+      "sha256": "b109bebca28104b0a0902a98b2537b78b30d43eb50d55ad018013fe617a64a8e"
+    },
+    {
+      "path": "Assets/Scripts/etc/TitlePlayerInfo.cs",
+      "kind": "project_csharp",
+      "bytes": 1491,
+      "sha256": "fda19e06d7d9041562be7d860c4c40a403bb14d2314d4e6f2d5df95509bebc2e"
+    },
+    {
+      "path": "Assets/Scripts/etc/TitleRanking.cs",
+      "kind": "project_csharp",
+      "bytes": 2196,
+      "sha256": "7f74d6d2efc5f73b718408b1709d6f30d0f4c1c4c936e8d5670acdf70d99697e"
+    },
+    {
+      "path": "Assets/Scripts/etc/TitleSceneManager.cs",
+      "kind": "project_csharp",
+      "bytes": 905,
+      "sha256": "53c65302300ca2d77627a1e49e46fb284ce0007a6214cb18295542306673b03c"
+    },
+    {
+      "path": "CONTRIBUTIONS.md",
+      "kind": "generated_document_or_control",
+      "bytes": 7296,
+      "sha256": "49abdb92a95239a20e4fcd7b0d1ee5ab61876388cd609841d9dd64907d8dd7bb"
+    },
+    {
+      "path": "MANIFEST.csv",
+      "kind": "generated_document_or_control",
+      "bytes": 28238,
+      "sha256": "1cd35701b85a62080038da6ef5d6d1c3719f85ddf3692df8757ebb21352a030b"
+    },
+    {
+      "path": "README.md",
+      "kind": "generated_document_or_control",
+      "bytes": 12226,
+      "sha256": "4197de15486191cb3db8c2bdb5b54fb44951bfa34ad2a3892e617b3309c94fb9"
+    },
+    {
+      "path": "ReviewContext/Packages/manifest.json",
+      "kind": "review_context",
+      "bytes": 1972,
+      "sha256": "312827790842851a211dae3a0935c5cc4873da6b5fa588c57856e1e7bdd58a12"
+    },
+    {
+      "path": "ReviewContext/Packages/packages-lock.json",
+      "kind": "review_context",
+      "bytes": 11396,
+      "sha256": "4a143e8553bd19777b50c1a2c30f3c3947df622d3c406270f8bfa67420338bf7"
+    },
+    {
+      "path": "ReviewContext/ProjectSettings/ProjectVersion.txt",
+      "kind": "review_context",
+      "bytes": 85,
+      "sha256": "f1e325df65256c89ec3da81c1aa37a8768d1070e90073904aa31fa0f62e38cf4"
+    },
+    {
+      "path": "VALIDATION.json",
+      "kind": "generated_validation",
+      "bytes": null,
+      "sha256": null,
+      "self_hash_note": "Self digest omitted to avoid circularity; final digest delivered separately"
+    }
+  ],
+  "publication": {
+    "repository": "als79gur49/2025-DB-TeamProject-code-portfolio",
+    "url": "https://github.com/als79gur49/2025-DB-TeamProject-code-portfolio",
+    "visibility": "public",
+    "authorization": "Explicit user approval for the exact named public repository and the reviewed 87-file subset",
+    "verification_scope": "Local package verification retained; final remote tree/blob/size verification and source private visibility are reported separately after publishing",
+    "source_history_imported": false,
+    "credentials_extracted": false
+  }
+}
